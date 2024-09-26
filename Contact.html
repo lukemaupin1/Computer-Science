@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <title> Bootstrap Website</title>
+
+   <meta charset="utf-8">
+   <meta name ="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <style>
+      .fit {
+         display: flex;
+         height: 100vh;
+      }
+
+      .menu {
+         width: 200px;
+         background-color: black;
+         height: 100vh;
+         margin-left: auto
+      }
+
+      .menu a {
+         background-color: black;
+         color: white;
+         display: block;
+         padding: 12px;
+         text-decoration: none;
+         text-align: right;
+      }
+
+      .menu a.current {
+         color: orange;
+      }
+
+      .menu .socials {
+         justify-content: space-around;
+         padding: 12px;
+         display: flex;
+      }
+
+      .menu .socials a {
+         color: white;
+      }
+
+      .content {
+         padding: 12px;
+         color: white;  
+      }
+   </style>
+</head>
+
+<body style="background-color: black;">
+<div class="fit">   
+   <div class="content">
+      <form>
+         <h1> Contact Us </h1>
+         <p> First Name: <input type ="text" name ="FirstName" value="Your Name Here" size=20> </p>
+         <p> Last Name: <input type ="text" name ="FirstName" value="Your Name Here" size=20> </p>
+         <p> Email: <input type ="text" name ="FirstName" value="Your Email" size=20> </p>
+         <p> Message: </p> 
+         <textarea> Type your message here </textarea>
+      </form>
+   
+   <button type="button" class="btn btn-primary"> Send </button>
+   </div>   
+   <div class="menu">
+      <h4 style="text-align: right; color: white; padding: 12px"> SHUTTER </h4>
+      <a href = "Home.html"> HOME </a>
+      <a href = "Photos.html"> PHOTOS </a>
+      <a href = "Bio.html"> BIO </a>
+      <a href = "Blog.html"> BLOG </a>
+      <a class = "current" href = "Contact.html"> CONTACT </a>
+
+      <div class="socials">
+         <a href="https://www.facebook.com/" class = "fa fa-facebook"></a>
+         <a href="https://www.twitter.com/" class = "fa fa-twitter"></a>
+         <a href="https://www.instagram.com/" class = "fa fa-instagram"></a>
+      </div>
+   </div>
+</div>
+</body>
+
+</html>
